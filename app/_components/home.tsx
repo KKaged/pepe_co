@@ -28,19 +28,19 @@ export default function Home() {
             <Image src={blob} alt="pepe" className="w-1/3 h-1/3" />
           ) : (
             <div className="h-3/4 w-3/4 text-center flex flex-col justify-evenly items-center">
-              <h2 className="text-5xl p-2">Company Overview</h2>
-              <p className="font-bold">
-                We currently provide English learning services and aim to expand
-                into the following areas:
+              <h2 className="text-2xl p-2">会社概要</h2>
+              <p className="font-bold w-1/2">
+                弊社は現在、英語学習サービスを提供しています。
+                将来的には、以下の分野での展開を目指しています。
               </p>
               <ul className="list-disc list-inside font-bold">
                 {companyBody.map((areas) => (
                   <li key={areas.length}>{areas}</li>
                 ))}
               </ul>
-              <p className="font-bold">
-                We are committed to delivering services that meet our
-                customers&apos; needs and growing together as partners
+              <p className="font-bold w-1/2">
+              私たちは、お客様のニーズに応じたサービスを提供し、
+              共に成長するパートナーとして活動してまいります。
               </p>
             </div>
           )}

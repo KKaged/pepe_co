@@ -8,7 +8,7 @@ export default function AboutUs() {
   const [over, setOver] = useState(false);
 
   const philosophy = (
-    <p className="text-3xl w-1/2">
+    <p className="text-3xl w-1/3">
       Our philosophy is to help those who want to broaden their understanding
       and knowledge by introducing them to new ideas, perspectives, and
       experiences.
@@ -39,7 +39,7 @@ export default function AboutUs() {
               setCeo(true);
             }}
           >
-            Words from our CEO
+            代表あいさつ
           </div>
           <div
             role="button"
@@ -48,8 +48,9 @@ export default function AboutUs() {
               setOver(false);
               setCeo(false);
             }}
+            className="pr-7"
           >
-            Our Philosophy
+            経営理念
           </div>
           <div
             role="button"
@@ -59,7 +60,7 @@ export default function AboutUs() {
               setCeo(false);
             }}
           >
-            Company Overview
+            会社概要
           </div>
         </div>
       </article>
@@ -92,7 +93,7 @@ export default function AboutUs() {
           <h2 className="text-lg text-center p-5 underline underline-offset-8 font-bold">
             会社概要
           </h2>
-          <div className="p-5 flex justify-center items-center h-[800px] text-white bg-[url('/about_bg.webp')] bg-no-repeat bg-center">
+          <div className="p-5 w- flex justify-center items-center h-[800px] text-white bg-[url('/about_bg.webp')] bg-no-repeat bg-center">
             <div className=" w-1/2 h-fit flex justify-around text-center">
               <section className="w-1/2 flex flex-col justify-evenly">
                 {overview.map((item) => (
