@@ -22,10 +22,10 @@ export default function Home() {
         <div
           onClick={() => setIsClicked(!isClicked)}
           role="button"
-          className="bg-contain bg-no-repeat bg-center bg-[url('/home.webp')] h-dvh w-fit md:w-5/6 md:h-5/6 flex flex-col items-center justify-around"
+          className="bg-contain bg-no-repeat bg-center bg-[url('/orangeBlob.webp')] h-dvh w-fit md:w-5/6 md:h-5/6 flex flex-col items-center justify-around"
         >
           {!isClicked ? (
-            <Image src={blob} alt="pepe" className="w-1/3 h-1/3" />
+            <Image src={blob} alt="pepe" className="" />
           ) : (
             <div className="h-3/4 w-3/4 text-center flex flex-col justify-evenly items-center">
               <h2 className="text-2xl p-2">会社概要</h2>

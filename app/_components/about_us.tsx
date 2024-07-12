@@ -8,7 +8,7 @@ export default function AboutUs() {
   const [over, setOver] = useState(false);
 
   const philosophy = (
-    <p className="text-3xl w-1/3">
+    <p className="text-lg w-1/3 text-center font-poppins">
       Our philosophy is to help those who want to broaden their understanding
       and knowledge by introducing them to new ideas, perspectives, and
       experiences.
@@ -21,14 +21,14 @@ export default function AboutUs() {
     { title: "従業員数", descr: "２名" },
     { title: "本社", descr: "横浜市神奈川区金港町5-14クアドリフォリオ8階" },
     { title: "連絡先", descr: "dhleon@pepe-co.com" },
-    { title: "代表者", descr: "ヒガレダレオン　ダニエル" },
+    { title: "代表者", descr: "ヒガレダレオンダニエル" },
   ];
 
   const subMenu = ["Words from our CEO", "Our Philosophy", "Company Overview"];
   return (
     <main className=" w-full h-[1200px] flex flex-col">
       <article className=" h-[300px] flex flex-col items-center justify-evenly bg-[#333] text-white">
-        <h1 className="text-6xl font-bold p-5">About Us</h1>
+        <h1 className="text-[64px] font-bold p-5 font-poppins">About Us</h1>
         <hr className="text-white w-full h-[30px]" />
         <div className="md:w-full h-fit flex items-center md:justify-evenly">
           <div
