@@ -2,7 +2,7 @@ export default function Contact() {
   return (
     <main className=" w-full h-[1200px] flex flex-col">
       <article className=" h-[200px] flex flex-col items-center justify-evenly bg-[#194128] text-white">
-        <h1 className="text-6xl font-bold p-5">Contact</h1>
+        <h1 className="text-[64px] font-bold p-5">Contact</h1>
         <hr className="text-white w-full h-[30px]" />
       </article>
       <div className=" h-[900px] py-5">

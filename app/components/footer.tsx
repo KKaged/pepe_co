@@ -8,7 +8,7 @@ export default function Footer() {
   const buildingInfo = <span>金港町5-14クアドリフォリオ8階</span>;
 
   return (
-    <footer className="h-fit flex flex-col justify-between items-center bg-[#004225] text-white ">
+    <footer className="h-fit flex flex-col justify-between items-center bg-[#194128] text-white ">
       <aside className="flex justify-between flex-col md:flex-row h-full w-full">
         <div className="mx-auto">
           <Image alt="logo" src={logo} className="" />

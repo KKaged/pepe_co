@@ -24,10 +24,9 @@ export default function AboutUs() {
     { title: "代表者", descr: "ヒガレダレオンダニエル" },
   ];
 
-  const subMenu = ["Words from our CEO", "Our Philosophy", "Company Overview"];
   return (
     <main className=" w-full h-[1200px] flex flex-col">
-      <article className=" h-[300px] flex flex-col items-center justify-evenly bg-[#333] text-white">
+      <article className=" h-[300px] flex flex-col items-center justify-evenly bg-[#194128] text-white">
         <h1 className="text-[64px] font-bold p-5 font-poppins">About Us</h1>
         <hr className="text-white w-full h-[30px]" />
         <div className="md:w-full h-fit flex items-center md:justify-evenly">
@@ -66,7 +65,7 @@ export default function AboutUs() {
       </article>
       {ceo && (
         <section className="bg-[#f5f5dc] h-[1000px]">
-          <h2 className="text-lg text-center p-5 underline underline-offset-8 font-bold">
+          <h2 className="text-[48px] text-center p-5 underline underline-offset-8 font-bold">
             代表あいさつ
           </h2>
           <div className="p-5">
@@ -80,7 +79,7 @@ export default function AboutUs() {
       )}
       {phi && (
         <section className="bg-[#f5f5dc] h-[1000px]">
-          <h2 className="text-lg text-center p-5 underline underline-offset-8 font-bold">
+          <h2 className="text-[48px] text-center p-5 underline underline-offset-8 font-bold">
             企業理念
           </h2>
           <div className="p-5 flex justify-center items-center h-[800px] text-white bg-[url('/about_bg.webp')] bg-no-repeat bg-center">
@@ -90,7 +89,7 @@ export default function AboutUs() {
       )}
       {over && (
         <section className="bg-[#f5f5dc] h-[1000px]">
-          <h2 className="text-lg text-center p-5 underline underline-offset-8 font-bold">
+          <h2 className="text-[48px] text-center p-5 underline underline-offset-8 font-bold">
             会社概要
           </h2>
           <div className="p-5 w- flex justify-center items-center h-[800px] text-white bg-[url('/about_bg.webp')] bg-no-repeat bg-center">
