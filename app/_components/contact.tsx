@@ -3,7 +3,6 @@ export default function Contact() {
     <main className=" w-full h-[1200px] flex flex-col">
       <article className=" h-[200px] flex flex-col items-center justify-evenly bg-[#194128] text-white">
         <h1 className="text-[64px] font-bold p-5">Contact</h1>
-        <hr className="text-white w-full h-[30px]" />
       </article>
       <div className=" h-[900px] py-5">
         <h2 className="text-lg text-center p-5 underline underline-offset-8 font-bold">

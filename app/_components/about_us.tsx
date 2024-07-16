@@ -8,10 +8,12 @@ export default function AboutUs() {
   const [over, setOver] = useState(false);
 
   const philosophy = (
-    <p className="text-lg w-1/3 text-center font-poppins">
-      Our philosophy is to help those who want to broaden their understanding
-      and knowledge by introducing them to new ideas, perspectives, and
-      experiences.
+    <p className="text-xl font-bold w-full text-center font-poppins">
+      Our philosophy is to help
+      <br /> those who want to broaden their understanding and knowledge
+      <br /> by introducing them to new ideas,
+      <br /> perspectives,
+      <br /> and experiences.
     </p>
   );
 
@@ -65,7 +67,7 @@ export default function AboutUs() {
       </article>
       {ceo && (
         <section className="bg-[#f5f5dc] h-[1000px]">
-          <h2 className="text-[48px] text-center p-5 underline underline-offset-8 font-bold">
+          <h2 className="text-xl text-center p-5 underline underline-offset-8 font-bold">
             代表あいさつ
           </h2>
           <div className="p-5">
@@ -79,7 +81,7 @@ export default function AboutUs() {
       )}
       {phi && (
         <section className="bg-[#f5f5dc] h-[1000px]">
-          <h2 className="text-[48px] text-center p-5 underline underline-offset-8 font-bold">
+          <h2 className="text-xl text-center p-5 underline underline-offset-8 font-bold">
             企業理念
           </h2>
           <div className="p-5 flex justify-center items-center h-[800px] text-white bg-[url('/about_bg.webp')] bg-no-repeat bg-center">
@@ -89,7 +91,7 @@ export default function AboutUs() {
       )}
       {over && (
         <section className="bg-[#f5f5dc] h-[1000px]">
-          <h2 className="text-[48px] text-center p-5 underline underline-offset-8 font-bold">
+          <h2 className="text-xl text-center p-5 underline underline-offset-8 font-bold">
             会社概要
           </h2>
           <div className="p-5 w- flex justify-center items-center h-[800px] text-white bg-[url('/about_bg.webp')] bg-no-repeat bg-center">

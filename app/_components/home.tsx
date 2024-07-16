@@ -27,19 +27,19 @@ export default function Home() {
           {!isClicked ? (
             <Image src={blob} alt="pepe" className="" />
           ) : (
-            <div className="h-3/4 w-3/4 text-center flex flex-col justify-evenly items-center">
-              <h2 className="text-2xl p-2">会社概要</h2>
-              <p className="font-bold w-1/2">
-                弊社は現在、英語学習サービスを提供しています。
+            <div className="h-3/4 w-3/4 text-center flex flex-col justify-evenly items-center text-white">
+              <h2 className="text-xl p-2">会社概要</h2>
+              <p className="font-bold w-2/3">
+                弊社は現在、英語学習サービスを提供しています。<br/>
                 将来的には、以下の分野での展開を目指しています。
               </p>
-              <ul className="list-disc list-inside font-bold">
+              <ul className="list-disc list-inside font-bold text-left">
                 {companyBody.map((areas) => (
                   <li key={areas.length}>{areas}</li>
                 ))}
               </ul>
               <p className="font-bold w-1/2">
-              私たちは、お客様のニーズに応じたサービスを提供し、
+              私たちは、お客様のニーズに応じたサービスを提供し、<br/>
               共に成長するパートナーとして活動してまいります。
               </p>
             </div>
