@@ -26,7 +26,7 @@ export default function header({
 }: HeaderProps) {
   return (
     <header className="flex justify-between h-[100px] w-screen">
-      <section className="ml-5 w-1/6">
+      <section className="ml-5 w-[14%]">
         <Image src={logo} alt="logo" className="w-full" />
       </section>
       <nav className="w-1/2">

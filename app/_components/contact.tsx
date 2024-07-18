@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <main className=" w-full h-[1200px] flex flex-col">
+    <main className=" w-full h-[1200px] flex flex-col bg-[#f5f5dc]">
       <article className=" h-[200px] flex flex-col items-center justify-evenly bg-[#194128] text-white">
         <h1 className="text-[64px] font-bold p-5">Contact</h1>
       </article>

@@ -96,7 +96,7 @@ export default function AboutUs() {
           </h2>
           <div className="p-5 w- flex justify-center items-center h-[800px] text-white bg-[url('/about_bg.webp')] bg-no-repeat bg-center">
             <div className=" w-1/2 h-fit flex justify-around text-center">
-              <section className="w-1/2 flex flex-col justify-evenly">
+              <section className="w-2/5 flex flex-col justify-evenly">
                 {overview.map((item) => (
                   <p key={item.title} className="">
                     <span>{item.title}</span>
