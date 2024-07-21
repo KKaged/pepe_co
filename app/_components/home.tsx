@@ -25,7 +25,7 @@ export default function Home() {
           className="bg-contain bg-no-repeat bg-center bg-[url('/orangeBlob.webp')] h-dvh w-fit md:w-5/6 md:h-5/6 flex flex-col items-center justify-around"
         >
           {!isClicked ? (
-            <Image src={blob} alt="pepe" className="" />
+            <Image src={blob} alt="pepe" className="w-1/4" />
           ) : (
             <div className="h-3/4 w-3/4 text-center flex flex-col justify-evenly items-center text-white">
               <h2 className="text-xl p-2">会社概要</h2>

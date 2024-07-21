@@ -1,6 +1,7 @@
 "use client";
 import logo from "@/public/pepe_footer.webp";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   const areaCode = <span>〒221-0056</span>;
@@ -18,7 +19,7 @@ export default function Footer() {
             <div className="w-full text-center flex flex-col items-center justify-center">
               <p className="underline pb-3 font-bold text-xl p-3">INFO</p>
               <span className="pb-5">About us</span>
-              <span>Electronic Public Notice</span>
+              <span><Link href="/notice">Electronic Public Notice</Link></span>
             </div>
           </section>
           <section className=" w-2/5 flex flex-col ">
