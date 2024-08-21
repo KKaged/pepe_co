@@ -18,8 +18,12 @@ export default function Footer() {
           <section className="w-2/5">
             <div className="w-full text-center flex flex-col items-center justify-center">
               <p className="underline pb-3 font-bold text-xl p-3">INFO</p>
-              <span className="pb-5">About us</span>
-              <span><Link href="/notice">Electronic Public Notice</Link></span>
+              <span className="pb-5">
+                <Link href="/about">About us</Link>
+              </span>
+              <span>
+                <Link href="/notice">Electronic Public Notice</Link>
+              </span>
             </div>
           </section>
           <section className=" w-2/5 flex flex-col ">
