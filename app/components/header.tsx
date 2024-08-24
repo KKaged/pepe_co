@@ -22,9 +22,11 @@ export default function header() {
             <li className="underline underline-offset-8 decoration-4 decoration-[#004aad] font-bold ">
               <Link href="/service">Service</Link>
             </li>
+            {/*
             <li className="underline underline-offset-8 decoration-4 decoration-[#004aad] font-bold ">
               <Link href="/contact-us">Contact Us</Link>
             </li>
+            */}
           </ul>
         </section>
       </nav>

@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
 import letter from "@/public/aboutCEO.webp";
 import Image from "next/image";
-import { useState } from "react";
+import { Fragment, useState } from "react";
 
 export default function AboutUs() {
   const [ceo, setCeo] = useState(true);
@@ -96,25 +96,16 @@ export default function AboutUs() {
           <h2 className="text-xl text-center p-5 underline underline-offset-8 font-bold">
             会社概要
           </h2>
-          <div className="p-5 w- flex justify-center items-center h-[800px] text-white bg-[url('/about_bg.webp')] bg-no-repeat bg-center">
-            <div className=" w-1/2 h-fit flex justify-around text-center">
-              <section className="w-2/5 flex flex-col justify-evenly">
-                {overview.map((item) => (
-                  <p key={item.title} className="">
-                    <span>{item.title}</span>
-                    <hr className="p-2" />
-                  </p>
-                ))}
-              </section>
-              <section className=" w-1/2 flex flex-col justify-evenly">
-                {overview.map((item) => (
-                  <p key={item.title}>
-                    <span>{item.descr}</span>
-                    <hr className="p-2" />
-                  </p>
-                ))}
-              </section>
-            </div>
+          <div className="p-5 w- flex flex-col justify-center items-center h-[800px] text-white bg-[url('/about_bg.webp')] bg-no-repeat bg-center">
+            {overview.map((item) => (
+              <Fragment key={item.title}>
+                <p className="w-1/3 flex justify-between p-2">
+                  <span>{item.title}</span>
+                  <span>{item.descr}</span>
+                </p>
+                <hr className="w-1/3" />
+              </Fragment>
+            ))}
           </div>
         </section>
       )}
