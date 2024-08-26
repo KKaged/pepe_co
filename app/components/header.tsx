@@ -8,7 +8,9 @@ export default function header() {
   return (
     <header className="flex justify-between h-[100px] w-screen">
       <section className="ml-5 w-[14%]">
+        <Link href="/">
         <Image src={logo} alt="logo" className="w-full" />
+        </Link>
       </section>
       <nav className="w-1/2">
         <section className="w-full h-full flex items-center">

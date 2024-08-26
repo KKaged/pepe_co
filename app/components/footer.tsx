@@ -12,7 +12,9 @@ export default function Footer() {
     <footer className="h-fit flex flex-col justify-between items-center bg-[#194128] text-[#FFB000]">
       <aside className="flex justify-between flex-col md:flex-row h-full w-full">
         <div className="mx-auto">
-          <Image alt="logo" src={logo} className="" />
+          <Link href="/">
+            <Image alt="logo" src={logo} className="" />
+          </Link>
         </div>
         <article className="md:w-3/5 flex md:justify-around justify-evenly">
           <section className="w-2/5">
