@@ -27,20 +27,19 @@ export default function Home() {
           <div
             onClick={() => setIsClicked(!isClicked)}
             role="button"
-            className="bg-contain bg-no-repeat bg-center bg-[url('/orangeBlob.webp')] h-[70vh] w-[70vw] md:h-[75vh] md:w-[75vw] flex flex-col items-center justify-around"
+            className="bg-contain bg-no-repeat bg-center bg-[url('/orangeBlob.webp')] h-[80vh] w-[80vw] md:h-[85vh] md:w-[85vw] flex flex-col items-center justify-around" // Increased size
           >
             {!isClicked ? (
               <Image src={blob} alt="pepe" className="w-1/3" />
             ) : (
               <div className="h-3/4 w-3/4 text-center flex flex-col justify-evenly items-center text-white">
                 <h2 className="text-lg font-bold p-2">会社概要</h2>
-                <p className="font-medium  text-s w-2/3">
+                <p className="font-medium text-lg w-2/3">
                   弊社は現在、英語学習サービスを提供しています。
                   <br />
                   将来的には、以下の分野での展開を目指しています。
                 </p>
-                <ul className="list-disc list-inside text-s font-medium text-left w-2/3 flex flex-col items-start">
-                  {" "}
+                <ul className="list-disc list-inside text-lg font-medium text-left w-2/3 flex flex-col items-start">
                   {/* Left-align list */}
                   {companyBody.map((areas, index) => (
                     <li key={index} className="w-full">
@@ -48,7 +47,7 @@ export default function Home() {
                     </li>
                   ))}
                 </ul>
-                <p className="font-medium text-s w-1/2">
+                <p className="font-medium text-lg w-1/2">
                   私たちは、お客様のニーズに応じたサービスを提供し、
                   <br />
                   共に成長するパートナーとして活動してまいります。
