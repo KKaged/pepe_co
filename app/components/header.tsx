@@ -1,5 +1,4 @@
 "use client";
-
 import Image from "next/image";
 import logo from "@/public/pepe_logo.webp";
 import Link from "next/link";
@@ -13,9 +12,9 @@ export default function Header() {
   };
 
   return (
-    <header className="relative flex justify-between items-center h-[100px] px-5 w-full bg-white shadow-md">
+    <header className="relative flex justify-between items-center h-[100px] sm:h-[80px] px-5 w-full bg-white shadow-md">
       {/* Logo Section */}
-      <section className="w-1/5 md:w-1/6 lg:w-[10%]">
+      <section className="w-[30%] sm:w-1/5 md:w-1/6 lg:w-[10%]">
         <Link href="/">
           <Image src={logo} alt="PePe logo" className="w-full h-auto" />
         </Link>
@@ -28,7 +27,6 @@ export default function Header() {
             { name: "Home", path: "/" },
             { name: "About Us", path: "/about-us" },
             { name: "Service", path: "/service" },
-            // { name: "Contact Us", path: "/contact-us" } // Uncomment to enable
           ].map((link) => (
             <li
               key={link.name}
@@ -64,13 +62,12 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden absolute left-0 right-0 top-[30px] bg-white shadow-lg z-50">
+        <div className="md:hidden absolute left-0 right-0 top-[40px] bg-white shadow-lg z-50">
           <ul className="flex flex-col items-center text-sm font-semibold">
             {[
               { name: "Home", path: "/" },
               { name: "About Us", path: "/about-us" },
               { name: "Service", path: "/service" },
-              // { name: "Contact Us", path: "/contact-us" } // Uncomment to enable
             ].map((link) => (
               <li key={link.name} className="w-full text-center">
                 <Link href={link.path} onClick={() => setIsOpen(false)}>
@@ -107,6 +104,15 @@ export default function Header() {
 
         .hover-underline:hover::before {
           transform: scaleX(1);
+        }
+
+        /* Adjust height for extra small screens */
+        @media (max-width: 640px) {
+          header {
+            height: 60px;
+            padding-left: 10px;
+            padding-right: 10px;
+          }
         }
       `}</style>
     </header>
