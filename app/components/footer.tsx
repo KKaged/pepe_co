@@ -4,44 +4,46 @@ import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
-  const areaCode = <span>〒221-0056</span>;
-  const cityArea = <span>神奈川県横浜市神奈川区</span>;
-  const buildingInfo = <span>金港町5-14クアドリフォリオ8階</span>;
+  const address = (
+    <>
+      <span>〒221-0056</span>
+      <br />
+      <span>神奈川県横浜市神奈川区金港町5-14クアドリフォリオ8階</span>
+    </>
+  );
 
   return (
-    <footer className="h-fit flex flex-col justify-between items-center bg-[#194128] text-[#FFB000]">
-      <aside className="flex justify-between flex-col md:flex-row h-full w-full">
-        <div className="mx-auto">
-          <Link href="/">
-            <Image alt="logo" src={logo} className="" />
-          </Link>
+    <footer className="flex flex-col items-center bg-[#194128] text-[#FFB000] p-6">
+      <div className="w-full flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+        <Link href="/" className="flex-shrink-0">
+          <Image src={logo} alt="PePe Logo" width={120} height={60} />
+        </Link>
+
+        <div className="flex flex-col md:flex-row w-full md:w-3/5 justify-around text-center md:space-x-10 space-y-4 md:space-y-0">
+          <section className="space-y-3">
+            <h2 className="underline font-bold text-xl">INFO</h2>
+            <Link href="/about-us" className="block text-lg hover:underline">
+              About Us
+            </Link>
+            <Link href="/notice" className="block text-lg hover:underline">
+              Electronic Public Notice
+            </Link>
+          </section>
+
+          <section className="space-y-3">
+            <h2 className="underline font-bold text-xl">CONTACT</h2>
+            <address className="not-italic text-lg">
+              {address}
+              <br />
+              <span>Tel: +80-70-2668-6559</span>
+            </address>
+          </section>
         </div>
-        <article className="md:w-3/5 flex md:justify-around justify-evenly">
-          <section className="w-2/5">
-            <div className="w-full text-center flex flex-col items-center justify-center">
-              <p className="underline pb-3 font-bold text-xl p-3">INFO</p>
-              <span className="pb-5">
-                <Link href="/about">About us</Link>
-              </span>
-              <span>
-                <Link href="/notice">Electronic Public Notice</Link>
-              </span>
-            </div>
-          </section>
-          <section className=" w-2/5 flex flex-col ">
-            <p className="text-center underline pb-3 font-bold text-xl p-3">
-              CONTACT
-            </p>
-            {areaCode}
-            {cityArea}
-            {buildingInfo}
-            <span className="pt-3">Tel: +80-70-2668-6559</span>
-          </section>
-        </article>
-      </aside>
-      <section className="text-center h-fit mx-auto">
-        <p className="p-1">©株式会社PePe</p>
-      </section>
+      </div>
+
+      <div className="pt-4 text-center">
+        <p className="text-lg">©株式会社PePe</p>
+      </div>
     </footer>
   );
 }
