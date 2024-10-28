@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Pepe co.",
+  title: "株式会社PePe",
   description: "The catalyst for transformation",
 };
 
