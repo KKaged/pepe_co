@@ -36,12 +36,12 @@ export default function AboutUs() {
       learning is at the heart of everything we do.
       <br />
       <br />
-      We understand that in today’s rapidly changing world, staying informed and
-      adaptable is more important than ever. That's why we strive to provide
-      engaging and accessible resources that empower you to explore and grow.
-      Whether you’re seeking to enhance your personal development, professional
-      skills, or simply looking to satisfy your curiosity, we are here to
-      support you every step of the way.
+      We understand that in today&apos;s rapidly changing world, staying
+      informed and adaptable is more important than ever. That&apos;s why we
+      strive to provide engaging and accessible resources that empower you to
+      explore and grow. Whether you&apos;re seeking to enhance your personal
+      development, professional skills, or simply looking to satisfy your
+      curiosity, we are here to support you every step of the way.
       <br />
       <br />
       Our goal is not just to be a source of information, but to be a catalyst
@@ -49,7 +49,7 @@ export default function AboutUs() {
       everyone feels inspired and equipped to learn something new every day.
       <br />
       <br />
-      Thank you for being a part of this journey with us. Together, let's
+      Thank you for being a part of this journey with us. Together, let&apos;s
       continue to broaden our understanding and enrich our lives through the
       power of knowledge.
       <br />
