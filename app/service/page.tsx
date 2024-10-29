@@ -1,49 +1,41 @@
-import lingoAcademy from "@/public/lingoAcademy.webp";
 import Image from "next/image";
 import logo from "@/public/logo.svg";
 
-const lineOne = (
-  <p>
-    当社の英語個別教育プログラムは、
-    <br /> 各生徒のニーズに合わせたカスタマイズされた指導を提供します。
-  </p>
-);
-const lineTwo = (
-  <p>
-    アメリカ出身のネイティブ講師が、
-    <br /> 生徒一人ひとりの目標やレベルに応じた最適な学習プランを作成し、
-    <br /> 効果的な学習をサポートします。
-  </p>
-);
-const lineThree = <p> 詳細は以下のサイトよりご確認ください。</p>;
+const lines = [
+  "当社の英語個別教育プログラムは、各生徒のニーズに合わせたカスタマイズされた指導を提供します。",
+  "アメリカ出身のネイティブ講師が、生徒一人ひとりの目標やレベルに応じた最適な学習プランを作成し、効果的な学習をサポートします。",
+  "詳細は以下のサイトよりご確認ください。",
+];
 
 export default function Service() {
   return (
-    <main className="h-[1000px] w-full flex flex-col justify-center items-center bg-[#f5f5dc]">
-      <article className=" h-[200px] w-full flex flex-col items-center justify-evenly bg-[#f4b84e] text-white">
-        <h1 className="text-[64px] font-poppins font-bold p-5">Service</h1>
+    <main className="min-h-screen w-full flex flex-col items-center bg-[#f5f5dc]">
+      {/* Header */}
+      <article className="w-full flex items-center justify-center bg-[#f4b84e] text-white py-8">
+        <h1 className="text-5xl md:text-6xl font-bold font-poppins">Service</h1>
       </article>
-      <section className=" h-[800px] w-full flex flex-col items-center justify-evenly">
-        <div className="flex items-center justify-center mx-auto">
-          <Image src={logo} alt="logo" className="w-[10%]" />
-          <h1 className="text-3xl ml-2 md:text-4xl font-bold text-center">
-            <span className="text-[rgb(78,101,122)] font-bold">Lingo</span>
-            Academy
+
+      {/* Content Section */}
+      <section className="w-full flex flex-col items-center py-16 px-4 bg-[#f5f5dc]">
+        <div className="flex items-center mb-12">
+          <Image src={logo} alt="logo" className="w-10 md:w-16" />
+          <h1 className="text-4xl md:text-5xl font-bold ml-3">
+            <span className="text-gray-700">Lingo</span>Academy
           </h1>
         </div>
-        <div className="bg-contain bg-no-repeat bg-center bg-[url('/orangeBlob.webp')] text-white w-2/3 h-3/4 flex flex-col justify-evenly items-center pt-16">
-          <span className="w-2/3 font-semibold text-lg text-center leading-loose pt-5">
-            {lineOne}
-          </span>
-          <span className="w-2/3 font-semibold text-lg text-center leading-loose">
-            {lineTwo}
-          </span>
-          <span className="w-2/3 font-semibold text-lg text-center leading-loose">
-            {lineThree}
-          </span>
-          <span className="hover:text-blue-600 hover:underline hover:underline-offset-8">
-            <a href="https://lingo-academy.org">Go to the site</a>
-          </span>
+
+        <div className="text-center text-lg md:text-xl text-gray-800 space-y-6">
+          {lines.map((line, index) => (
+            <p key={index} className="max-w-2xl mx-auto leading-relaxed">
+              {line}
+            </p>
+          ))}
+          <a
+            href="https://lingo-academy.org"
+            className="text-blue-600 hover:text-blue-800 hover:underline transition-colors mt-8 inline-block text-lg font-semibold"
+          >
+            Go to the site
+          </a>
         </div>
       </section>
     </main>
