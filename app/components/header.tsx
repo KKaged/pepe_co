@@ -62,7 +62,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden absolute left-0 right-0 top-[40px] bg-white shadow-lg z-50">
+        <div className="md:hidden absolute left-0 right-0 top-[50px] bg-white shadow-lg z-50">
           <ul className="flex flex-col items-center text-sm font-semibold">
             {[
               { name: "Home", path: "/" },

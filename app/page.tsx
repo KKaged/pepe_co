@@ -3,8 +3,6 @@
 import Footer from "./components/footer";
 import Header from "./components/header";
 import { useState } from "react";
-import Image from "next/image";
-import blob from "@/public/pepe_home.webp";
 
 const companyBody = [
   "学習教室の運営: 多様な分野の教育機会を提供。",
@@ -20,43 +18,32 @@ export default function Home() {
   const [isClicked, setIsClicked] = useState(false);
 
   return (
-    <main className="flex flex-col justify-between h-dvh overflow-x-hidden">
+    <main className="flex flex-col min-h-screen overflow-x-hidden bg-[#f5f5dc]">
       <Header />
-      <main className="h-[1000px] w-full flex justify-center items-center bg-[#f5f5dc]">
-        <div className="p-10 h-full w-full flex items-center justify-center">
-          <div
-            onClick={() => setIsClicked(!isClicked)}
-            role="button"
-            className="bg-contain bg-no-repeat bg-center bg-[url('/orangeBlob.webp')] h-[80vh] w-[80vw] md:h-[85vh] md:w-[85vw] flex flex-col items-center justify-around" // Increased size
-          >
-            {!isClicked ? (
-              <Image src={blob} alt="pepe" className="w-1/3" />
-            ) : (
-              <div className="h-3/4 w-3/4 text-center flex flex-col justify-evenly items-center text-white">
-                <h2 className="text-lg font-bold p-2">会社概要</h2>
-                <p className="font-medium text-lg w-2/3">
-                  弊社は現在、英語学習サービスを提供しています。
-                  <br />
-                  将来的には、以下の分野での展開を目指しています。
-                </p>
-                <ul className="list-disc list-inside text-lg font-medium text-left w-2/3 flex flex-col items-start">
-                  {/* Left-align list */}
-                  {companyBody.map((areas, index) => (
-                    <li key={index} className="w-full">
-                      {areas}
-                    </li>
-                  ))}
-                </ul>
-                <p className="font-medium text-lg w-1/2">
-                  私たちは、お客様のニーズに応じたサービスを提供し、
-                  <br />
-                  共に成長するパートナーとして活動してまいります。
-                </p>
-              </div>
-            )}
-          </div>
+      <section className="flex flex-col items-center justify-center min-h-[80vh] p-8">
+        <div className="max-w-4xl w-full bg-[#F4B84E] shadow-lg rounded-full p-8">
+          <h2 className="text-2xl font-bold text-center text-white">
+            会社概要
+          </h2>
+          <p className="mt-4 text-center text-white">
+            弊社は現在、英語学習サービスを提供しています。
+            <br />
+            将来的には、以下の分野での展開を目指しています。
+          </p>
+          <ul className="mt-6 text-left text-white space-y-2 list-disc list-inside">
+            {companyBody.map((areas, index) => (
+              <li key={index} className="pl-2">
+                {areas}
+              </li>
+            ))}
+          </ul>
+          <p className="mt-6 text-center text-white">
+            私たちは、お客様のニーズに応じたサービスを提供し、
+            <br />
+            共に成長するパートナーとして活動してまいります。
+          </p>
         </div>
-      </main>
+      </section>
       <Footer />
     </main>
   );
