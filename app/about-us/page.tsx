@@ -8,11 +8,15 @@ export default function AboutUs() {
   const [over, setOver] = useState(false);
 
   const philosophy = (
-    <p className="text-base md:text-xl font-semibold w-full text-center font-poppins p-4 md:p-6 leading-relaxed">
-      Our philosophy is to help those who want to broaden their understanding
-      and knowledge by introducing them to new ideas, perspectives, and
-      experiences.
-    </p>
+    <div className="flex justify-center items-center min-h-screen">
+      <p className="text-base md:text-xl font-semibold  font-poppins p-4 md:p-6 leading-relaxed ">
+        <span className="text-3xl font-bold">Our philosophy is</span>
+        <br />
+        to help those who want to broaden their understanding and knowledge
+        <br />
+        by introducing them to new ideas, perspectives, and experiences.
+      </p>
+    </div>
   );
 
   const overview = [
@@ -25,7 +29,7 @@ export default function AboutUs() {
   ];
 
   const ceoMessage = (
-    <p className="text-base md:text-lg font-normal leading-relaxed text-center font-poppins p-4 md:p-8">
+    <p className="text-base md:text-lg font-semibold text-[#194128] font-normal leading-relaxed text-center font-poppins p-4 md:p-8">
       Welcome,
       <br />
       <br />
@@ -123,7 +127,7 @@ export default function AboutUs() {
           <h2 className="text-xl md:text-2xl text-center font-bold underline underline-offset-8 mb-4 md:mb-6">
             企業理念
           </h2>
-          <div className="flex justify-center items-center h-[400px] md:h-[600px] text-white bg-[url('/about_bg.webp')] bg-no-repeat bg-center bg-cover">
+          <div className="flex justify-center items-center h-[400px] md:h-[600px] text-[#194128]  bg-no-repeat bg-center bg-cover">
             {philosophy}
           </div>
         </section>
@@ -137,11 +141,11 @@ export default function AboutUs() {
           <div className="p-4 md:p-5 flex flex-col items-center">
             {overview.map((item) => (
               <Fragment key={item.title}>
-                <p className="w-full md:w-2/3 flex justify-between p-2 text-base md:text-lg">
+                <p className="w-full md:w-2/3 flex font-semibold text-[#194128] justify-between p-2 text-base md:text-lg">
                   <span>{item.title}</span>
                   <span>{item.descr}</span>
                 </p>
-                <hr className="w-full md:w-2/3 border-black" />
+                <hr className="w-full md:w-2/3 border-[#194128]" />
               </Fragment>
             ))}
           </div>

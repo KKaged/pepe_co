@@ -13,7 +13,7 @@ export default function Footer() {
   );
 
   return (
-    <footer className="flex flex-col items-center bg-[#194128] text-[#FFB000] p-6">
+    <footer className="flex flex-col items-center bg-[#194128] text-white p-6">
       <div className="w-full flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
         <Link href="/" className="flex-shrink-0">
           <Image src={logo} alt="PePe Logo" width={120} height={60} />

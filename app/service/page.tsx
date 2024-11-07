@@ -11,7 +11,7 @@ export default function Service() {
   return (
     <main className="min-h-screen w-full flex flex-col items-center bg-[#f5f5dc]">
       {/* Header */}
-      <article className="w-full flex items-center justify-center bg-[#f4b84e] text-white py-6 md:py-8">
+      <article className="w-full flex items-center justify-center bg-[#194128] text-white py-6 md:py-8">
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-poppins">
           Service
         </h1>
@@ -26,7 +26,7 @@ export default function Service() {
           </h1>
         </div>
 
-        <div className="text-center text-base md:text-lg lg:text-xl text-gray-800 space-y-4 md:space-y-6">
+        <div className="text-center text-base font-semibold md:text-lg lg:text-xl text-[#194128] space-y-4 md:space-y-6">
           {lines.map((line, index) => (
             <p key={index} className="max-w-2xl mx-auto leading-relaxed">
               {line}
@@ -34,7 +34,7 @@ export default function Service() {
           ))}
           <a
             href="https://lingo-academy.org"
-            className="text-blue-600 hover:text-blue-800 hover:underline transition-colors mt-6 inline-block text-base md:text-lg font-semibold"
+            className="text-blue-600 hover:text-blue-800 hover:underline transition-colors mt-6 inline-block text-base md:text-lg font-medium"
           >
             Go to the site
           </a>
